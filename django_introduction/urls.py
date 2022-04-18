@@ -14,10 +14,13 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path,include
+from django.urls import path, include
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('blog/', include('blog.urls'))
+    # path('blog/', include('blog.urls')),
+    path('cms/', include('cms.urls')),# 新添加CMS app url文件
+    path('account/', include('blog.urls')),# 新添加的blog app url文件
+    path('', include('post.urls'))# 将post app里的首页加载进来
 ]

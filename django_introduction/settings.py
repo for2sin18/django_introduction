@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
 from pathlib import Path
-
+import pymysql
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -40,7 +40,10 @@ INSTALLED_APPS = [
     #myapp
     'blog.apps.BlogConfig',
     'markdown_deux',
-    'blog.templatetags.my_filter'
+    'blog.templatetags.my_filter',
+    'cms.apps.CmsConfig',
+    'post.apps.PostConfig',
+    'link.apps.LinkConfig'
 ]
 
 MIDDLEWARE = [
@@ -58,7 +61,7 @@ ROOT_URLCONF = 'django_introduction.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'front', 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -67,9 +70,9 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
-            # 'builtins': [
-            #     'django.templatetags.static'
-            # ]
+            'builtins': [
+             'django.templatetags.static'
+            ]
         },
     },
 ]
@@ -80,16 +83,17 @@ WSGI_APPLICATION = 'django_introduction.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+pymysql.install_as_MySQLdb()
 DATABASES = {
     'default': {
         # 'ENGINE': 'django.db.backends.sqlite3',
         # 'NAME': BASE_DIR / 'db.sqlite3',
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'ning',
+        'NAME': 'root',
         'USER': 'root',
-        'PASSWORD': '7315141',
-        'HOST': 'localhost',
-        'PORT': '3307'
+        'PASSWORD': '1111111',
+        'HOST': 'local',
+        'PORT': '3306'
     }
 }
 
@@ -130,14 +134,17 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-# STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR, 'front', 'dist')
-# ]
+STATICFILES_DIRS = [
+   os.path.join(BASE_DIR, 'front', 'dist'),
+   os.path.join(BASE_DIR, 'blog', 'static'),
+]
 # STATIC_ROOT = os.path.join(BASE_DIR, 'static_dist')
 
 STATIC_URL = '/static/'
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'collect_static')
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+AUTH_USER_MODEL = 'blog.User'
+LOGIN_URL = '/cms/login'
