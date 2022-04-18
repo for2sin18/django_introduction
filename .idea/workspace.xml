@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2babff86-8b5a-43b3-a35a-64e299a7b8db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_introduction/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_introduction/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_introduction/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_introduction/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +33,9 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
     <option name="myUseModuleSdk" value="true" />
     <option name="myModuleName" value="django_introduction" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="django_introduction" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -256,8 +251,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2547" />
-    <option name="y" value="-191" />
+    <option name="x" value="2451" />
+    <option name="y" value="-265" />
     <option name="width" value="1614" />
     <option name="height" value="1039" />
   </component>
@@ -431,12 +426,12 @@
       <workItem from="1650032769562" duration="6866000" />
       <workItem from="1650078763325" duration="8828000" />
       <workItem from="1650177541063" duration="15728000" />
-      <workItem from="1650286199891" duration="1534000" />
+      <workItem from="1650286199891" duration="2752000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="217638000" />
+    <option name="totallyTimeSpent" value="218856000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -448,12 +443,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2422" y="-225" width="1291" height="831" extended-state="0" />
-    <editor active="true" />
+    <frame x="2345" y="-284" width="1291" height="831" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27088404" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49913344" visible="true" weight="0.27088404" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Favorites" order="2" sideWeight="0.50086653" side_tool="true" visible="true" weight="0.27088404" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32819906" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959448" weight="0.24526067" />
@@ -462,10 +456,10 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32819906" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32938388" />
-      <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32938388" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5004055" side_tool="true" weight="0.24526067" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.17453505" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32904148" />
+      <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32904148" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50121653" side_tool="true" weight="0.17453505" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49878347" visible="true" weight="0.17453505" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32618025" />
       <window_info anchor="bottom" id="SVN Repositories" order="13" weight="0.32984293" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
